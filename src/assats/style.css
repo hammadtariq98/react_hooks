@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif; }
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto; }
+
+button, input {
+  outline: none; }
+
+button {
+  font-size: 16px;
+  padding: 15px 20px;
+  color: #ffffff;
+  cursor: pointer; }
+
+header {
+  background-color: #f8f8f8; }
+  header .header {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0; }
+    header .header .left-section {
+      display: grid;
+      grid-template-columns: repeat(3, max-content);
+      grid-gap: 30px;
+      align-items: center; }
+      header .header .left-section .search {
+        display: flex;
+        height: 50px; }
+        header .header .left-section .search input {
+          width: 250px;
+          border: 1px solid #d6d6d6;
+          border-right: none;
+          padding: 10px;
+          font-size: 16px; }
+        header .header .left-section .search button {
+          color: #ffffff;
+          background-color: #34a853;
+          border: 1px solid #34a853; }
+      header .header .left-section .registered button:first-child {
+        background-color: #ac3335;
+        border: 1px solid #ac3335;
+        margin: 0 20px 0 0; }
+      header .header .left-section .registered button:nth-child(3) {
+        background-color: #f58634;
+        border: 1px solid #f58634;
+        margin: 0 0 0 20px; }
+      header .header .left-section .cart {
+        display: flex;
+        border: 1px solid #ac3335; }
+        header .header .left-section .cart figure {
+          border-right: 1px solid #ac3335;
+          padding: 10px; }
+          header .header .left-section .cart figure img {
+            height: 40px;
+            width: 50px; }
+        header .header .left-section .cart > div {
+          padding: 10px;
+          background-color: #ac3335; }
+          header .header .left-section .cart > div p {
+            color: #ffffff;
+            margin: 0 10px 5px 15px; }
+    header .header figure img {
+      height: 70px;
+      width: 160px; }
+
+nav {
+  background-color: #f58634; }
+  nav .nav-bar {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    text-align: center;
+    padding: 20px 0; }
+    nav .nav-bar a {
+      display: block;
+      text-decoration: none;
+      color: #ffffff;
+      border-right: 1px solid #ffffff;
+      padding: 4px 20px; }
+    nav .nav-bar a:last-child {
+      border-right: none; }
+
+.food-card {
+  box-shadow: 2px 7px 20px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px 0;
+  border-radius: 10px; }
+  .food-card span {
+    padding: 8px 12px;
+    background-color: #f58634;
+    color: #ffffff;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 0 0 0 20px; }
+  .food-card button {
+    background-color: #ac3335;
+    border: 1px solid #ac3335;
+    margin: 20px 0 0 20px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.2); }
+  .food-card figure {
+    text-align: center;
+    padding: 20px 0; }
+    .food-card figure img {
+      width: 100%; }
+  .food-card h4 {
+    color: #f58634;
+    padding: 0px 20px; }
+  .food-card .category {
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-size: 18px;
+    color: #ac3335;
+    font-weight: 600;
+    padding: 0px 20px; }
+  .food-card .description {
+    padding: 20px 20px;
+    line-height: 22px;
+    display: block;
+    display: -webkit-box;
+    height: 110px;
+    -webkit-line-clamp: 4;
+    /* autoprefixer: off */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .food-card ul.description {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: decimal; }
+    .food-card ul.description li {
+      display: inline-block; }
+
+.food-conatainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  padding: 40px 0 80px 0; }
+  .food-conatainer .heading {
+    grid-column: 1/4;
+    color: #ac3335; }
+
+.erorr {
+  font-size: 24px;
+  text-align: center;
+  font-weight: bolder;
+  padding: 40px 0;
+  color: #ac3335; }
+
+/*# sourceMappingURL=style.css.map */
